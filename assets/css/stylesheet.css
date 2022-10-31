@@ -77,11 +77,12 @@ body {
   display:flex;
   align-items: center;
   font-size: 20px;
-     }
+  flex-wrap: row;     
+}
 
 .about-me img {
  width:25%;
-display:inline-block;
+display:inline;
 border-radius: 15px;
 }
 
@@ -89,6 +90,7 @@ border-radius: 15px;
   text-indent: 30px;
   margin-left: 30px;
   margin-right: 30px;
+  flex:.5 1 0%;
 }
 
 .work-cards {
@@ -111,4 +113,21 @@ width: 100%;
   width:30%;
   cursor:pointer;
   box-shadow: 10px 10px rgb(128, 0, 117);
+}
+
+@media screen and (max-width: 820px) {
+  .about-me {
+    height: auto;
+    display: table;
+  }
+.about-me img {
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 630px) {
+.navigation a {
+  font-size: 12px;
+}
 }
