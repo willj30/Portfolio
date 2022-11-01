@@ -1,10 +1,12 @@
 body {
- font-family: Arial, Helvetica, sans-serif;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  color: rgba(173, 174, 175, 0.918);
  background-color: #333;
 }
 
-
+footer {
+  text-align: center;
+}
 
 .container {
      position: right;
@@ -14,7 +16,7 @@ body {
   }
 
   .navigation {
-    overflow: hidden;
+    overflow: none;
     background-color: #333;
     position: sticky;
     top:0%;
@@ -27,7 +29,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
   }
 
 .navigation a:hover {
@@ -51,7 +53,7 @@ body {
 
 .hero-intro {
   text-align: center;
-  margin-top: 25%;
+  margin-top: 375px;
   font-size: 48px;
   color: #ddd;
 }
@@ -73,11 +75,20 @@ body {
   padding: 25px
 }
 
+#about-section {
+  display: flexbox;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: rgb(22, 9, 46);
+  border-radius: 15px;
+}
+
 .about-me {
   display:flex;
   align-items: center;
   font-size: 20px;
-  flex-wrap: row;     
+  flex-wrap: row;
+
 }
 
 .about-me img {
@@ -93,8 +104,10 @@ border-radius: 15px;
   flex:.5 1 0%;
 }
 
-.work-cards {
-  display:inline-block;
+.work-cards { 
+  display: inline-block;
+  position:relative;
+  left: 5%;
   width: 25%;
   padding: 10px;
   border: solid 1px;
@@ -107,6 +120,7 @@ border-radius: 15px;
 
 .work-cards img {
 width: 100%;
+border-radius: 10px;
 }
 
 .work-cards:hover {
@@ -114,6 +128,7 @@ width: 100%;
   width:30%;
   cursor:pointer;
   box-shadow: 10px 10px rgb(128, 0, 117);
+  
 }
 
 @media screen and (max-width: 1020px) {
@@ -130,6 +145,7 @@ width: 100%;
 
 .work-cards {
   width:40%;
+  
 }
 
 .work-cards:hover {
